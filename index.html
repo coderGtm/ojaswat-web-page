@@ -5,21 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Stylesheets-->
-    <!--<link rel="stylesheet" href="styles/w3.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div id="home">
-        <img id="homeLogo" src="assets/logo.jpeg" alt="Logo">
+    <div id="branding" class="container-fluid bg-dark text-light text-center py-3">
+        <img id="homeLogo" src="assets/logo.webp" alt="Logo"><br><br>
         <h1 class="hashTag">#WeIgniteThePulseWithFire</h1>
         <h1 class="hashTag">#WhateverItTakes</h1>
+    </div>
+    <img src="assets/OMS 5.0.webp" alt="Ojaswat Motorsports Car" class="img-fluid">
         <svg onclick="location.href = '#about';" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" id="scrollDownBtn" class="bi bi-arrow-down-circle mt-5" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
           </svg>
+    <div id="about" class="container-fluid text-center">
+        <h1 class="display-1">About Us</h1>
+        <p class="lead">Ojaswat Motorsports is a Formula Student team manufacturing Formula Student Racing Car and representing CHARUSAT University at international levels by participating in competitions like Formula Bharat, SAE Supra, FMAE, etc since 2011. We have manufactured 7 Cars as of now and have been awarded 11 times as of now.</p>
     </div>
-    <div id="about">
-        <h1>About Us</h1>
-        <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+    <div id="cars" class="container-fluid bg-dark text-light text-center">
+        <h1 class="display-1">Our Cars</h1><br><br>
+
+        <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner container">
+      <div class="carousel-item active">
+        <img src="assets/OMS 1.0.webp" alt="Los Angeles" class="d-block w-100">
+        <div class="carousel-caption">
+            <h3>Car 1</h3>
+            <p>We had such a great time!</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/OMS 2.0.webp" alt="Chicago" class="d-block w-100">
+        <div class="carousel-caption">
+            <h3>Car 2</h3>
+            <p>We had such a great time!</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/OMS 3.0.jpg" alt="New York" class="d-block w-100">
+        <div class="carousel-caption">
+            <h3>Car 3</h3>
+            <p>We had such a great time!</p>
+          </div>
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
     </div>
 </body>
 </html>

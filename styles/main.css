@@ -3,30 +3,20 @@ html, body {
     padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    font-size: 1rem;
-    line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 }
-#home {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(121, 38, 38,0.5)), url(../assets/tempBg.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
+#branding {
+
 }
 #homeLogo {
-    margin-top: 30vh;
     height: 10vh;
     width: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    filter: brightness(0) invert(1);
 }
 .hashTag {
     font-size: 3vh;
     font-style: italic;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
 #scrollDownBtn {
     position: absolute;
@@ -34,20 +24,6 @@ html, body {
     margin: 0 auto;
     animation: moveUpDown 2s ease infinite;
     -webkit-animation: moveUpDown 2s ease infinite;
-}
-#about {
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
-    color: black;
-    text-align: center;
-}
-#about h1 {
-    font-size: 2.5rem;
-}
-#about p {
-    font-size: 3vh;
-    padding: 0 5vw;
 }
 
 
